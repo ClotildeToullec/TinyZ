@@ -1,6 +1,6 @@
 messaging - public - pictures
-buildPictureMessageFromForm: aPicturePath
+buildPictureMessageFromForm: aForm
 	| message |
 	message := self message.
-	message embedImageForm: aPicturePath.
+	message embedImageForm: aForm.
 	^ message
