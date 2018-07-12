@@ -1,5 +1,5 @@
 messaging - private
-sendInPrivate: message toUserNamed: username
+privateMessage: message toUserNamed: username
 	| user channel |
 	user := (self servers first members collect: [ :member | member user ]) detect: [ :us | us username = username ].
 	channel := restApi directMessageWith: user.

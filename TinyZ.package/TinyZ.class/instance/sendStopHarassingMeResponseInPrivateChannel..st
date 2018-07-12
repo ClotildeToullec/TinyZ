@@ -1,3 +1,3 @@
 commands - privateMessages
 sendStopHarassingMeResponseInPrivateChannel: channel
-	self pictureMessage: self harassementReactionPicturesUrls atRandom inChannel: channel
+	self pictureFromUrl: self harassementReactionPicturesUrls atRandom inChannel: channel
