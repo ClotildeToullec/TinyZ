@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSBot",
+	"category" : "TinyZ",
+	"classinstvars" : [
+		"z"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TinyZ",
+	"type" : "normal"
+}
