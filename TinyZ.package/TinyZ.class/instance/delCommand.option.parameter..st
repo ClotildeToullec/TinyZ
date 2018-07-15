@@ -1,5 +1,7 @@
 commands
 delCommand: message option: option parameter: parameter
+	"Triggered when a 'del' command was sent in a public channel"
+
 	| numberOfMesages |
 	numberOfMesages := parameter isNil
 		ifTrue: [ 1 ]

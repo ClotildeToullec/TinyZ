@@ -1,5 +1,8 @@
 commands
 showWikipediaPageRequestedIn: message
+	"Sends the lik to the wikipedia page of any subject written betwen '**' in a public message.
+Does nothing if the page does not exist."
+
 	(message content findBetweenSubstrings: '**')
 		do: [ :el | 
 			el isAllSeparators

@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "ClotildeToullec 7/15/2018 20:21",
 	"super" : "DSBot",
 	"category" : "TinyZ",
 	"classinstvars" : [
@@ -14,7 +14,9 @@
 		"privateKeywords",
 		"privateParser",
 		"privateResponses",
-		"harassmentReactionsUrls"
+		"harassmentReactionsUrls",
+		"lastHello",
+		"greetings"
 	],
 	"name" : "TinyZ",
 	"type" : "normal"

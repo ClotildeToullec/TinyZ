@@ -1,6 +1,7 @@
 initialization
 initialize
 	super initialize.
-	self buildParsers.
 	self initializeCommandsDictionaries.
-	harassmentReactionsUrls := 'harassmentUrls.txt' asFileReference contents substrings: String cr
+	self buildParsers.
+	harassmentReactionsUrls := 'harassmentUrls.txt' asFileReference contents substrings: String cr.
+	greetings := #('bonjour' 'salut' 'yo' 'hello')

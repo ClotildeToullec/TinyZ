@@ -1,0 +1,3 @@
+*TinyZ
+lastDeconnexionTimestamp
+	^ lastDeconnexionTimestamp
