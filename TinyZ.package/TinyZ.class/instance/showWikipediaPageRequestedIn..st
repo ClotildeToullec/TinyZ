@@ -1,5 +1,5 @@
-commands - parsing
-showWikipediaPageAskedIn: message inChannel: channelId
+commands
+showWikipediaPageRequestedIn: message
 	(message content findBetweenSubstrings: '**')
 		do: [ :el | 
 			el isAllSeparators
@@ -11,4 +11,4 @@ showWikipediaPageAskedIn: message inChannel: channelId
 						get;
 						response.
 					response isSuccess
-						ifTrue: [ self textMessage: url contents urlDecoded inChannel: channelId ] ] ]
+						ifTrue: [ self textMessage: url contents urlDecoded inChannel: (self getChannelOfMessage: message) ] ] ]

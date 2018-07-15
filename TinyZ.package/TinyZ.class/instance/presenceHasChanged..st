@@ -1,4 +1,4 @@
-annoucements reception
+logging
 presenceHasChanged: ann
 	| user username status updateMessage |
 	user := self getUserOfId: ann payload eventData user id.

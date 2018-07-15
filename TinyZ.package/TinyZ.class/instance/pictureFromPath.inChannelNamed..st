@@ -1,3 +1,3 @@
-messaging - public - pictures
+sending pictures - public
 pictureFromPath: aPicturePath inChannelNamed: aChannel
-	^ self sendMessage: (self buildPictureMessageFromPath: aPicturePath) toServer: 'LucasFilms' channelNamed: aChannel
+	^ self message: (self buildPictureMessageFromPath: aPicturePath) toServer: 'LucasFilms' channelNamed: aChannel

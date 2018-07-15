@@ -1,5 +1,5 @@
-messaging - public
+sending messages - public
 textMessage: aStringOrText inChannel: aChannel
 	^ self
-		sendMessage: (self message content: aStringOrText)
+		message: (self message content: aStringOrText)
 		toChannel: aChannel

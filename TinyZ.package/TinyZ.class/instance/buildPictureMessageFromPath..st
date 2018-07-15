@@ -1,4 +1,4 @@
-messaging - public - pictures
+messages building
 buildPictureMessageFromPath: aPicturePath
 	| message |
 	message := self message.

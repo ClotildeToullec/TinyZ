@@ -1,3 +1,3 @@
-messaging - public - pictures
+sending pictures - public
 pictureFromUrl: aPictureUrl inChannel: aChannel
-	^ self sendMessage: (self buildPictureMessageFromUrl: aPictureUrl) toChannel: aChannel
+	^ self message: (self buildPictureMessageFromUrl: aPictureUrl) toChannel: aChannel

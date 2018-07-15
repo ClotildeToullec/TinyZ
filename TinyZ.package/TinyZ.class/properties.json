@@ -7,7 +7,15 @@
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"entireMessageParser",
+		"commandParser",
+		"publicKeywords",
+		"privateKeywords",
+		"privateParser",
+		"privateResponses",
+		"harassmentReactionsUrls"
+	],
 	"name" : "TinyZ",
 	"type" : "normal"
 }

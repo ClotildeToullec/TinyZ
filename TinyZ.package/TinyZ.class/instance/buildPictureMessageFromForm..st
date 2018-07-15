@@ -1,4 +1,4 @@
-messaging - public - pictures
+messages building
 buildPictureMessageFromForm: aForm
 	| message |
 	message := self message.

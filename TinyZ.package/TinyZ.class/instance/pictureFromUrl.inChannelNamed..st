@@ -1,3 +1,3 @@
-messaging - public - pictures
+sending pictures - public
 pictureFromUrl: aPictureUrl inChannelNamed: aChannel
-	^ self sendMessage: (self buildPictureMessageFromUrl: aPictureUrl) toServer: 'LucasFilms' channelNamed: aChannel
+	^ self message: (self buildPictureMessageFromUrl: aPictureUrl) toServer: 'LucasFilms' channelNamed: aChannel

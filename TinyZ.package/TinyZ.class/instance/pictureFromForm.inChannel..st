@@ -1,3 +1,3 @@
-messaging - public - pictures
+sending pictures - public
 pictureFromForm: aForm inChannel: aChannel
-	^ self sendMessage: (self buildPictureMessageFromPath: aForm) toChannel: aChannel
+	^ self message: (self buildPictureMessageFromPath: aForm) toChannel: aChannel

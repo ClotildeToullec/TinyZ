@@ -1,4 +1,4 @@
-messaging - public - pictures
+messages building
 buildPictureMessageFromUrl: aPictureUrl
 	| message |
 	message := self message.
