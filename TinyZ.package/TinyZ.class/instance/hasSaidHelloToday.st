@@ -1,3 +1,3 @@
-experimental
+greetings
 hasSaidHelloToday
 	^ lastHello = Date today

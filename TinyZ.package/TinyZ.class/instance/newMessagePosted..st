@@ -1,4 +1,4 @@
-message reception
+ann - message reception
 newMessagePosted: ann
 	| message channel |
 	message := ann payload eventData.

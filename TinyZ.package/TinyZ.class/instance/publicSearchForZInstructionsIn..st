@@ -1,4 +1,4 @@
-message reception
+ann - message reception
 publicSearchForZInstructionsIn: aMessage
 	"Analyzes the text content of aMessage to find instructions and triggers the appropriate response.
 	If two instructions have the same keyword, only the first will be considered."

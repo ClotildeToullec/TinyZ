@@ -1,4 +1,4 @@
-message reception
+ann - message reception
 dmSearchForInstructionIn: message
 	| channel commands |
 	channel := self getChannelOfMessage: message.
