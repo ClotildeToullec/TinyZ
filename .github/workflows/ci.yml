@@ -6,13 +6,6 @@ on:
 jobs:
  testing:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Read file
-        id: read-file
-        run: |
-          VERSIONS=$(cat $GITHUB_WORKSPACE/.github/workflows/versions.json)
-          echo "versions=$VERSIONS" >> $GITHUB_ENV
     env:
       PROJECT_NAME: ${{ fromJSON(env.versions).moose-name }}
     strategy:
@@ -20,6 +13,12 @@ jobs:
         smalltalk: ${{ fromJSON(env.versions).pharo-versions }}
     name: ${{ matrix.smalltalk }}
     steps:
+      - uses: actions/checkout@v3
+      - name: Read file
+        id: read-file
+        run: |
+          VERSIONS=$(cat $GITHUB_WORKSPACE/.github/workflows/versions.json)
+          echo "versions=$VERSIONS" >> $GITHUB_ENV
       - uses: actions/checkout@v3
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
